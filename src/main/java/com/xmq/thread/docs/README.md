@@ -36,6 +36,24 @@
       }
     2.然后生成该类的对象：
        MyThread myThread = new MyThread(..)
+       
+* [sleep / join / yield 方法]
+* [1.sleep方法：可以调用Thread的静态方法：public static void sleep(long millis)throws InterruptedException
+			     使得当前线程休眠（暂停执行mills毫秒） ]
+			  由于是静态方法，sleep可以由类名直接调用：Thread.sleep(...)
+* [2.join方法：合并某个线程]
+* [3.yield方法：让出CPU,给其他线程执行的机会]
+
+线程的优先级别：
+Java提供一个线程调度器来监控程序中启动后进入就绪状态的所有线程。
+线程调度器按照线程的优先级觉得应调度哪个线程来执行。
+线程的优先级用数字来表示，范围从1到10，一个线程的缺省优先级是5.
+   Thread.MIN_PRIORITY = 1
+   Thread.MAX_PRIORITY = 10
+   Thread.NORM_PRIORITY = 5
+使用下面的方法获得或设置线程对象的优先级
+   int getPrioriry();
+   void setPriority(int newPriority)
 
 > #### ▌ 资源下载
 
