@@ -1,6 +1,5 @@
 package com.xmq.thread.simple;
 
-import com.sun.javafx.font.t2k.T2KFactory;
 
 public class TestJoin {
 
