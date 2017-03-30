@@ -1,0 +1,33 @@
+<body bgcolor="red"></body> 设置背景颜色
+<body text="green"></body>  设置文本颜色
+<body link="blue"></body>   设置链接颜色
+<body vlink="yellow"></body>已经访问了的链接颜色
+<body alink="red"></body>   正在被点击的链接颜色
+
+<meta>内容</meta> 页面的元信息（meta-information）
+提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词
+必须的属性：content 值：some_text 定义name属性相关的元信息
+常见的属性：
+1.author
+2.keywords
+3.description
+6.others
+summary:把content属性关联到一个名称
+比如描绘出网页的关键词：<meta name="keywords" content="厦门小煤球网络科技有限公司"/>
+注意：meta标记必须放在head元素里面
+
+
+知识扩展：GBK与UTF-8
+UTF-8：Unicode TransformationFormat-8bit,
+允许含BOM，但通常不含BOM。是用以解决国际上字符的一种
+多字节编码，它对英文使用8位（即一个字节），
+中文使用24位（三个字节）来编码。
+UTF-8包含全世界所有国家需要用到的字符，是国际编码，通用性强。
+UTF-8编码的文字可以在各国支持UTF8字符集的浏览器上显示。
+如果是UTF8编码，则在外国人的英文IE上也能显示中文，他们无需下载IE的中文语言支持包。
+
+GBK是国际标准GB2312基础上扩容后兼容GB2312的标准。
+GBK的文字编码是用双字节来表示的，即不论中、英文字符均使用
+双字节来表示，为了区分中文，将其最高位都设定成1.
+GBK包含全部中文字符，是国家编码，
+通用性比UTF8差，不过UTF8占用的数据库比GBK大。
